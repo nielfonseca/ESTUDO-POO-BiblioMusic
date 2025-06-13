@@ -1,4 +1,6 @@
-﻿Musica musica1 = new Musica();
+﻿//Objeto é uma instância da Classe, por exemplo o 'música1' e o 'musica2' são objetos da classe Musica()
+
+Musica musica1 = new Musica();
 musica1.Nome = "Radioactive";
 musica1.Artista = "Imagine Dragons";
 musica1.Duracao = 305;
