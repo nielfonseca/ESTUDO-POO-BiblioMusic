@@ -1,18 +1,32 @@
 ﻿//Objeto é uma instância da Classe, por exemplo o 'música1' e o 'musica2' são objetos da classe Musica()
 
-Album albumDoImagineDragons = new Album();
-albumDoImagineDragons.Nome = "Envolve";
+Banda imagineDragons = new Banda("Imagine Dragons");
 
-Musica musica1 = new Musica();
-musica1.Nome = "Believer";
-musica1.Duracao = 204;
+Album albumDoImagineDragons = new Album("Envolve");
+
+Genero generoRock = new Genero("Rock");
 
 
-Musica musica2 = new Musica();
-musica2.Nome = "Thunder";
-musica2.Duracao = 187;
+Musica musica1 = new Musica(imagineDragons, "Believer")
+{
+    Duracao = 204,
+    Genero = generoRock,
+    Disponivel = true,
+};
+
+
+Musica musica2 = new Musica(imagineDragons, "Thunder")
+{
+    Duracao = 187,
+    Genero = generoRock,
+    Disponivel = false,
+};
+
 
 albumDoImagineDragons.AdicionarMusica(musica1);
 albumDoImagineDragons.AdicionarMusica(musica2);
 
-albumDoImagineDragons.ExibirMusicasDoAlbum();
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
+imagineDragons.AdicionarAlbum(albumDoImagineDragons);
+imagineDragons.ExibirDiscografia();
