@@ -1,5 +1,5 @@
 ﻿//Objeto é uma instância da Classe, por exemplo o 'música1' e o 'musica2' são objetos da classe Musica()
-
+/*
 Banda imagineDragons = new Banda("Imagine Dragons");
 
 Album albumDoImagineDragons = new Album("Envolve");
@@ -29,4 +29,11 @@ albumDoImagineDragons.AdicionarMusica(musica2);
 musica1.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
 imagineDragons.AdicionarAlbum(albumDoImagineDragons);
-imagineDragons.ExibirDiscografia();
+imagineDragons.ExibirDiscografia();*/
+
+
+Episodio ep1 = new(1, "Técnicas de facilitação", 45);
+ep1.AdicionarConvidados("Maria");
+ep1.AdicionarConvidados("João");
+Console.WriteLine(ep1.Resumo);
+
