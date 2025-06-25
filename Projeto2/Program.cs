@@ -35,5 +35,14 @@ imagineDragons.ExibirDiscografia();*/
 Episodio ep1 = new(1, "Técnicas de facilitação", 45);
 ep1.AdicionarConvidados("Maria");
 ep1.AdicionarConvidados("João");
-Console.WriteLine(ep1.Resumo);
+
+Episodio ep2 = new(2, "Técnicas de aprendizado", 67);
+ep2.AdicionarConvidados("José");
+ep2.AdicionarConvidados("Alice");
+ep2.AdicionarConvidados("Igor");
+
+Podcast podcast = new("PodCast Amigos", "Daniel");
+podcast.AdicionarEpisodio(ep1);
+podcast.AdicionarEpisodio(ep2);
+podcast.ExibirDetalhes();
 
